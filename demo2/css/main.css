@@ -1,0 +1,196 @@
+/*页面布局*/
+/*公共样式*/
+/*清除浮动*/
+.clear{
+    clear: both;
+}
+.icon{
+    font-family: FontAwesome;
+}
+.fixDiv{
+    width: 100%;
+    position:fixed;
+    z-index:999;
+    top:0;
+}
+/*版面留白*/
+.blank{
+    height: 60px;
+    width: 100%;
+    background: #fff;
+}
+/*整体布局样式开始*/
+
+/*外部大盒子*/
+.box{
+    text-align: center;
+}
+
+/*内容样式*/
+.content{
+    position: relative;
+    width:80%;
+    margin:20px auto;
+}
+
+/*主体样式*/
+.content_body{
+    position: relative;
+    width:100%;
+}
+
+/*底部样式*/
+.content_footer{
+    position: relative;
+    width:100%;
+}
+
+/*整体布局样式结束*/
+
+/*细节布局样式开始*/
+
+/*头部样式*/
+.header{
+    margin: 0px auto;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+/*导航栏样式*/
+.center{
+    width: 100%;
+    margin: 0 auto;
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+
+}
+.nav li {
+    float: left;
+}
+.nav li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/*导航图片样式*/
+.body_nav{
+    height: 300px;
+    border: 1px solid #ccc;
+}
+
+/*文字在左的文章样式*/
+.artical_content{
+    width: 80%;
+    min-width: 860px;
+    height: 340px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+.artical_content:hover{
+    box-shadow:0 0 2px #000;
+}
+.artical_content:hover img{
+    transform: scale(1.1);
+    transition: all 1s ease 0s;
+}
+.left_part1{
+    width: 380px;
+    height: 260px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 30px;
+    display: inline-block;
+    /*border: 1px solid red;*/
+
+}
+.left_part1 div{
+    float: left;
+
+}
+.left_part2{
+    width: 380px;
+    height: 260px;
+    margin-top: 40px;
+    overflow:hidden;
+    display: inline-block;
+    /*border: 1px solid red;*/
+
+}
+.left_part2 img{
+    width: 380px;
+    height: 260px;
+    overflow:hidden;
+    transform: scale(1);
+    transition: all 1s ease 0s;
+}
+/*文字在右的文字样式*/
+.right_par1{
+    width: 380px;
+    height: 260px;
+    float: right;
+    margin-top: 40px;
+    margin-right: 30px;
+    overflow:hidden;
+    display: inline-block;
+}
+.right_par1 div{
+    float: right;
+}
+.right_par2{
+    width: 380px;
+    height: 260px;
+    overflow:hidden;
+    margin-top: 40px;
+    display: inline-block;
+}
+.right_par2 img{
+    width: 380px;
+    height: 260px;
+    overflow:hidden;
+    transform: scale(1);
+    transition: all 1s ease 0s;
+}
+
+/*底部版权样式*/
+
+.fot2{
+    display: inline-block;
+}
+.fot2 li{
+    list-style: none;
+    float: left;
+    margin: 0px 5px;
+}
+.fot2 li:hover a{
+    color: #00adba;
+}
+.fot2 a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*细节布局样式结束*/
+.p1{
+    font-size: 14px;
+    color: #818181;
+}
+.p3{
+    font-size: 14px;
+    color: #818181;
+}
+.p4{
+    text-align: center;
+    font-size: 14px;
+    color: #818181;
+}

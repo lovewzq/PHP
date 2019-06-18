@@ -1,0 +1,139 @@
+/**{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    border: 0;*/
+/*}*/
+body{
+    background-color: #f1f1f1;
+}
+.icon{
+    font-family: FontAwesome;
+}
+.clear{
+    clear: both;
+}
+.active{
+    background-color: #939393;
+    cursor:pointer;
+}
+.active a{
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+a{  color: #000;
+    text-decoration: none;
+    display: block;
+}
+.top{
+    width: 100%;
+    min-width: 1220px;
+    height: 50px;
+    float: left;
+}
+.top li{
+    float: left;
+    line-height: 50px;
+}
+.logo{
+    width: 200px;
+    line-height: 50px;
+    font-size: 40px;
+    float: left;
+    margin-left: 20px;
+    display: inline-block;
+}
+.top_right{
+    float: right;
+    text-align: center;
+    margin-right: 100px;
+}
+.top_right li{
+    width: 100px;
+}
+.top_right li:hover{
+    background-color: #cbcbcb;
+    cursor:pointer;
+}
+.top_right li:hover a{
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    min-width: 1220px;
+}
+.main_left{
+    width: 15%;
+    min-width: 150px;
+    height: 800px;
+    float: left;
+    margin-top: 50px;
+}
+.main_right{
+    width: 85%;
+    min-width: 1000px;
+    height: 800px;
+    float: left;
+    margin-top: 15px;
+    background-color: #e7e7e7;
+}
+
+.main_left ul {
+    width: 100%;
+    min-width: 150px;
+    height: 800px;
+    background-color: #f1f1f1;
+}
+.main_left li{
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+
+}
+.main_left li:hover{
+    background-color: #cbcbcb;
+    cursor:pointer;
+
+}
+
+.main_left li:hover a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+    transition: all 0.2s linear;
+}
+.main_left li a{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.part1{
+    min-width: 1000px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.part1 li{
+    width: 200px;
+    height: 50px;
+    float: left;
+
+}
+
+.main_foot input{
+    float: left;
+}
+/*·ÖÒ³ÑùÊ½*/
+.pagination li{
+    display: inline-block;
+}
+.pagination li a{
+    float: left;
+    display: inline;
+}
+/*ul.pagination {*/
+/*    display: inline-block;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
+
