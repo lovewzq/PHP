@@ -1,11 +1,3 @@
-<?php
-header("content-type:text/html;charset=utf-8");
-$ID = $_GET['id'];
-require_once '../dbconf.php';
-$sql = "select * from article where tid='$ID'";
-$res = mysqli_query($link,$sql);
-$row = mysqli_fetch_array($res);
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,14 +20,14 @@ $row = mysqli_fetch_array($res);
 <!--<textarea id="editor" class="markdown" rows="15"   data-language ="zh" data-theme="fa4" data-bs-version="3">a</textarea>-->
 
 <div class="container">
-    <form action="rw.php?id=<?php echo $ID;?>" method="post">
-        <div class="row">
-            <div class="panel">
-                <h1>修 改 文 章 <small><em> 此处可对您的文章进行修改</em></small></h1>
-                <h3><input type="text" value="<?php echo $row['title'];?>" name="title" class="form-control"></h3>
-                <textarea id="editor" rows="15" name="content"><?php echo $row['content'];?></textarea>
-            </div>
+    <form action="add.php" method="post">
+    <div class="row">
+        <div class="panel">
+            <h1>修 改 文 章 <small><em> 此处可对您的文章进行修改发布</em></small></h1>
+            <h3><input type="text" placeholder="请输入您的标题～" name="title" class="form-control"></h3>
+            <textarea id="editor" rows="15" name="content"></textarea>
         </div>
+    </div>
 </div>
 
 
@@ -56,7 +48,7 @@ $row = mysqli_fetch_array($res);
 
 
 <!-- jQuery JS Library -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="../bootstrap/js/jquery.js"></script>
 
 <!-- -如果您需要净化HTML输出，请包含DOM purify插件（只有在markdown-it HTML输入时才需要）被允许）。必须在markdown-editor.js之前加载。 -->
 <script src="mark/plugins/purify/purify.min.js"></script>
@@ -88,7 +80,7 @@ $row = mysqli_fetch_array($res);
 <script src="http://twemoji.maxcdn.com/2/twemoji.min.js?11.0"></script>
 <!-- 突出显示代码样式的JS主插件库 -->
 <script src="mark/plugins/highlight/highlight.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="mark/js/markdown-editor.js"></script>
 <!-- 如果需要，可以选择包含theme.js脚本或theme.css用于不同的主题 -->
 <script src="mark/themes/fa4/theme.js"></script>
@@ -141,4 +133,3 @@ $row = mysqli_fetch_array($res);
 </script>
 </body>
 </html>
-

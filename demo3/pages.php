@@ -16,14 +16,7 @@ $row = mysqli_fetch_array($res);
     <title>墨 尘</title>
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
-    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
-    <!--[if lt IE 9]>
-    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-    <![endif]-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /*
 * 文章内容样式
@@ -73,11 +66,7 @@ $row = mysqli_fetch_array($res);
     <div class="row">
         <div class="container">
             <div class="col-md-12">
-<!--                <ul class="breadcrumb">-->
-<!--                    <li><a href="#">Home</a></li>-->
-<!--                    <li><a href="#">2013</a></li>-->
-<!--                    <li class="active">十一月</li>-->
-<!--                </ul>-->
+
                 <h1 class="article-title"><?php echo $row['title'];?></h1>
                 <footer class="content-meta ">
                     <time><?php echo $row['date'];?></time>
@@ -85,28 +74,11 @@ $row = mysqli_fetch_array($res);
                     <span><a href="#"><?php echo $row['writer'];?></a></span>
                     <div id="content">
                         <img class="img-responsive center-block" src="img/<?php echo $row['pic'];?>" alt="" style="width: 1000px;height: 300px">
-<!--                        <p class="lead">华龙网-新重庆客户端6月18日14时50分讯（记者 李华侨)</p>-->
                         <p class="text-center">
                             <?php echo $row['content'];?>
                         </p>
                     </div>
                 </footer>
-<!--                <nav aria-label="Page navigation">-->
-<!--                    <ul class="pagination">-->
-<!--                        <li>-->
-<!--                            <a href="#" aria-label="Previous">-->
-<!--                                <span aria-hidden="true">&laquo;</span>-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                        <li><a href="#">1</a></li>-->
-<!--                        <li><a href="#">2</a></li>-->
-<!--                        <li>-->
-<!--                            <a href="#" aria-label="Next">-->
-<!--                                <span aria-hidden="true">&raquo;</span>-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </nav>-->
 
             </div>
         </div>
@@ -173,9 +145,9 @@ $row = mysqli_fetch_array($res);
 
 
 <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="bootstrap/js/jquery.js"></script>
 <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
 
